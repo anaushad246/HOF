@@ -1,0 +1,65 @@
+let books = [
+    { bookName: "To Kill a Mockingbird", publicationYear: 1960, author: "Harper Lee" },
+    { bookName: "1984", publicationYear: 1949, author: "George Orwell" },
+    { bookName: "Pride and Prejudice", publicationYear: 1813, author: "Jane Austen" },
+    { bookName: "The Great Gatsby", publicationYear: 1925, author: "F. Scott Fitzgerald" },
+    { bookName: "Moby Dick", publicationYear: 1851, author: "Herman Melville" },
+    { bookName: "Brave New World", publicationYear: 1932, author: "Aldous Huxley" },
+    { bookName: "The Catcher in the Rye", publicationYear: 1951, author: "J.D. Salinger" },
+    { bookName: "War and Peace", publicationYear: 1869, author: "Leo Tolstoy" },
+    { bookName: "The Lord of the Rings", publicationYear: 1954, author: "J.R.R. Tolkien" },
+    { bookName: "Harry Potter and the Philosopher's Stone", publicationYear: 1997, author: "J.K. Rowling" },
+    { bookName: "The Chronicles of Narnia", publicationYear: 1950, author: "C.S. Lewis" },
+    { bookName: "Jane Eyre", publicationYear: 1847, author: "Charlotte Brontë" },
+    { bookName: "The Hobbit", publicationYear: 1937, author: "J.R.R. Tolkien" },
+    { bookName: "Frankenstein", publicationYear: 1818, author: "Mary Shelley" },
+    { bookName: "The Grapes of Wrath", publicationYear: 1939, author: "John Steinbeck" },
+    { bookName: "Alice's Adventures in Wonderland", publicationYear: 1865, author: "Lewis Carroll" },
+    { bookName: "One Hundred Years of Solitude", publicationYear: 1967, author: "Gabriel García Márquez" },
+    { bookName: "Don Quixote", publicationYear: 1605, author: "Miguel de Cervantes" },
+    { bookName: "The Picture of Dorian Gray", publicationYear: 1890, author: "Oscar Wilde" },
+    { bookName: "The Odyssey", publicationYear: 8, author: "Homer" },
+    { bookName: "Crime and Punishment", publicationYear: 1866, author: "Fyodor Dostoevsky" },
+    { bookName: "The Bell Jar", publicationYear: 1963, author: "Sylvia Plath" },
+    { bookName: "Wuthering Heights", publicationYear: 1847, author: "Emily Brontë" },
+    { bookName: "The Sun Also Rises", publicationYear: 1926, author: "Ernest Hemingway" },
+    { bookName: "Catch-22", publicationYear: 1961, author: "Joseph Heller" },
+    { bookName: "Gone with the Wind", publicationYear: 1936, author: "Margaret Mitchell" },
+    { bookName: "The Handmaid's Tale", publicationYear: 1985, author: "Margaret Atwood" },
+    { bookName: "Slaughterhouse-Five", publicationYear: 1969, author: "Kurt Vonnegut" },
+    { bookName: "A Tale of Two Cities", publicationYear: 1859, author: "Charles Dickens" },
+    { bookName: "The Stand", publicationYear: 1978, author: "Stephen King" },
+    { bookName: "Les Misérables", publicationYear: 1862, author: "Victor Hugo" },
+    { bookName: "Anna Karenina", publicationYear: 1877, author: "Leo Tolstoy" },
+    { bookName: "The Brothers Karamazov", publicationYear: 1880, author: "Fyodor Dostoevsky" },
+    { bookName: "The Road", publicationYear: 2006, author: "Cormac McCarthy" },
+    { bookName: "Lord of the Flies", publicationYear: 1954, author: "William Golding" },
+    { bookName: "The Secret Garden", publicationYear: 1911, author: "Frances Hodgson Burnett" },
+    { bookName: "A Clockwork Orange", publicationYear: 1962, author: "Anthony Burgess" },
+    { bookName: "The Shining", publicationYear: 1977, author: "Stephen King" },
+    { bookName: "Little Women", publicationYear: 1868, author: "Louisa May Alcott" },
+    { bookName: "The Hitchhiker's Guide to the Galaxy", publicationYear: 1979, author: "Douglas Adams" },
+    { bookName: "Dracula", publicationYear: 1897, author: "Bram Stoker" },
+    { bookName: "The Adventures of Sherlock Holmes", publicationYear: 1892, author: "Arthur Conan Doyle" },
+    { bookName: "Fahrenheit 451", publicationYear: 1953, author: "Ray Bradbury" },
+    { bookName: "The Count of Monte Cristo", publicationYear: 1844, author: "Alexandre Dumas" },
+    { bookName: "East of Eden", publicationYear: 1952, author: "John Steinbeck" },
+    { bookName: "The Scarlet Letter", publicationYear: 1850, author: "Nathaniel Hawthorne" },
+    { bookName: "The Jungle Book", publicationYear: 1894, author: "Rudyard Kipling" },
+    { bookName: "Gulliver's Travels", publicationYear: 1726, author: "Jonathan Swift" },
+    { bookName: "The Girl with the Dragon Tattoo", publicationYear: 2005, author: "Stieg Larsson" },
+    { bookName: "The Name of the Wind", publicationYear: 2007, author: "Patrick Rothfuss" },
+    { bookName: "The Martian", publicationYear: 2011, author: "Andy Weir" },
+    { bookName: "The Old Man and the Sea", publicationYear: 1952, author: "Ernest Hemingway" },
+    { bookName: "The Hunger Games", publicationYear: 2008, author: "Suzanne Collins" }
+];
+const e = books.filter(book => book.publicationYear > 2000);
+const b = e.map((i) => {
+  return {
+    publicationYear: i.publicationYear,
+    author: i.author.toUpperCase()
+  };
+});
+
+console.log(b);
+
